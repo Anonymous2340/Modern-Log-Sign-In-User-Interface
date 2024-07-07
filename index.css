@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: none;
+    margin: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 98%;
+    background: url("https://redpithemes.com/Documentation/assets/img/page_bg/page_bg_blur02.jpg");
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 400px;
+    height: 630px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ccc;
+    border-radius: 7px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+}
+
+.container form #sign-up-btn, #log-in-btn {
+    padding: 20px 70px;
+    width: auto;
+    height: auto;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.container form #sign-up-btn {
+    color: #ccc;
+}
+
+.container form {
+    position: relative;
+}
+
+form .social-icons {
+    font-size: 25px;
+}
+
+form .or {
+    margin: 10px 10px;
+    padding: 0 10px;
+}
+
+#sign-up-form .or::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 36%;
+    height: 1px;
+    width: 150px;
+    background-color: #ccc;
+}
+
+#sign-up-form .or::after {
+    content: '';
+    position: absolute;
+    top: 36%;
+    right: 0;
+    height: 1px;
+    width: 150px;
+    background-color: #ccc;
+}
+
+#log-in-form .or::before {
+    content: '';
+    position: absolute;
+    left: 28%;
+    top: 48%;
+    height: 1px;
+    width: 137px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#log-in-form .or::after {
+    content: '';
+    position: absolute;
+    top: 48%;
+    right: 28%;
+    height: 1px;
+    width: 137px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.container .sign-up-section button, .log-in-section button {
+    width: auto;
+    height: auto;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.container .log-in-section #log-in-submit {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ccc;
+}
+
+.container form .inputs {
+    position: relative;
+}
+
+.container form .inputs label {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    /* padding: 10px; */
+    transition: transform 0.35s ease-in-out;
+}
+
+.container form .inputs input:focus + label, input:not(:placeholder-shown) + label, input:hover + label {
+    transform: translateY(-35px);
+}
+
+.container form .inputs input {
+    width: 300px;
+    height: 30px;
+    margin: 20px 0;
+    padding: 6px;
+    font-size: 0.6em;
+    outline: none;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    color: #ccc;
+}
+
+.container #log-in-form input {
+    color:rgba(0, 0, 0, 0.6)
+}
+
+.container form .inputs #show-pwd-sign-up {
+    position: absolute;
+    right: 1%;
+    top: 22%;
+    font-size: 20px;
+    color: #ccc;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.container form .inputs #show-pwd-log-in {
+    position: absolute;
+    right: 1%;
+    top: 22%;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.container .log-in-section {
+    width: 700px;
+    position: absolute;
+    transform: translateY(120%);
+    border-radius: 100%;
+    background: #ccc;
+    color:rgba(0, 0, 0, 0.6);
+    transition: all 0.55s ease-in-out;
+}
+
+.active .log-in-section {
+    transform: translateY(29%);
+    padding: 0 200px 100px 200px;
+    border-radius: 165%;
+    color: rgba(0, 0, 0, 0.6);
+}
+
